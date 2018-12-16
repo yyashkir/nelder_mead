@@ -88,7 +88,7 @@ double objective_fn ( double z[])
 	fx1 = x(1) - x(0) * x(0) ;
 	fx2 = 1.0 - x(0);
 	fx = 100.0 * fx1 * fx1 +  fx2 * fx2;
-//	cout << endl << fx;
+	cout << endl << fx;
 	return fx;
 }
 //****************************************************************************80
@@ -104,5 +104,7 @@ int main()
 	step_size.fill(1);			//for now
 
 	minimize();
+
+
 	return 0;
 }
